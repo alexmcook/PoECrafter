@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Fontin-SmallCaps;
+  src: url('Fontin-SmallCaps.woff') format('woff');
+}
+
+.item-box {
+  width: auto;
+  max-width: 500px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Fontin-SmallCaps;
+  color: rgb(128, 128, 128);
+  font-size: 10.875pt;
+  letter-spacing: 0.1px;
+  
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.title-bar--normal {
+  background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderWhiteMiddle.png?scale=1) top left repeat-x;
+  height: 33px;
+  position: relative;
+}
+
+.title-bar-left--normal {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderWhiteLeft.png?scale=1) top left no-repeat;
+    left: 0;
+    height: 33px;
+    width: 29px;
+    position: absolute;
+}
+
+.title-bar-right--normal {
+    background-image: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderWhiteRight.png?scale=1);
+    right: 0;
+    height: 33px;
+    width: 29px;
+    position: absolute;
+}
+
+.item-separator--normal {
+  background-image: url(http://web.poecdn.com/image/Art/2DArt/UIImages/InGame/ItemsSeparatorWhite.png?scale=1);
+  margin: auto;
+  width: 200px;
+  height: 8px;
+}
+
+.title-bar--magic {
+  background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderMagicMiddle.png?scale=1) top left repeat-x;
+  height: 33px;
+  position: relative;
+}
+
+.title-bar-left--magic {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderMagicLeft.png?scale=1) top left no-repeat;
+    left: 0;
+    height: 33px;
+    width: 29px;
+    position: absolute;
+}
+
+.title-bar-right--magic {
+    background-image: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderMagicRight.png?scale=1);
+    right: 0;
+    height: 33px;
+    width: 29px;
+    position: absolute;
+}
+
+.item-separator--magic {
+  background-image: url(http://web.poecdn.com/image/Art/2DArt/UIImages/InGame/ItemsSeparatorMagic.png?scale=1);
+  margin: auto;
+  width: 200px;
+  height: 8px;
+}
+
+.title-bar--rare {
+  background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderRareMiddle.png?scale=1) top left repeat-x;
+  height: 54px;
+  position: relative;
+}
+
+.title-bar-left--rare {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderRareLeft.png?scale=1) top left no-repeat;
+    left: 0;
+    height: 54px;
+    width: 44px;
+    position: absolute;
+}
+
+.title-bar-right--rare {
+    background-image: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderRareRight.png?scale=1);
+    right: 0;
+    height: 54px;
+    width: 44px;
+    position: absolute;
+}
+
+.item-separator--rare {
+  background-image: url(http://web.poecdn.com/image/Art/2DArt/UIImages/InGame/ItemsSeparatorRare.png?scale=1);
+  margin: auto;
+  width: 200px;
+  height: 8px;
+  padding: 1px;
+}
+
+.title-text {
+  line-height: 31px;
+  font-size: 14.25pt;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title-text-2 {
+  line-height: 16px;
+  font-size: 14.25pt;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text--normal {
+  max-width: 360px;
+  color: rgb(200, 200, 200);
+}
+
+.text--magic {
+  max-width: 360px;
+  color: rgb(137, 136, 255);
+}
+
+.text--rare {
+  max-width: 360px;
+  color: rgb(255, 255, 119);
+}
+
+.text--descriptor {
+  max-width: 360px;
+  color: rgb(128, 128, 128);
+}
+
+.text--flavor {
+  font-style: italic;
+}
+
+.item-stats {
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+.item-flavor-text {
+  min-width: 360px;
+  max-width: 360px;
+}
+
+.item-box {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

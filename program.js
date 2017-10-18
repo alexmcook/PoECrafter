@@ -128,12 +128,12 @@ function Item(base) {
         return itemMod.group === mod.group;
       }, mod))
     }.bind(this));
-    if (this.prefixCount >= 13) {
+    if (this.prefixCount >= 3) {
       newModPool = newModPool.filter(function(mod) {
         return mod.generationType !== generationType.PREFIX;
       });
     }
-    if (this.suffixCount >= 13) {
+    if (this.suffixCount >= 3) {
       newModPool = newModPool.filter(function(mod) {
         return mod.generationType !== generationType.SUFFIX;
       });
@@ -184,7 +184,6 @@ function Item(base) {
     this.addMod(masterModList[1218]);
     this.addMod(masterModList[989]);
     this.addMod(masterModList[1500]);
-    this.addMod(masterModList[203]);
   }
 }
 
@@ -234,7 +233,7 @@ function transformAndFormatValue(value, handler, format) {
       value = (value / 60).toFixed(1);
       break;
     case "per_minute_to_per_second_0dp":
-      value = (value / 60).toFxied(0);
+      value = (value / 60).toFixed(0);
       break;
     case "per_minute_to_per_second_2dp":
       value = (value / 60).toFixed(2);
@@ -311,19 +310,19 @@ function run() {
   currentBase = masterBaseList.filter(function(baseItem) {
     return baseItem.name === "Vaal Regalia";
   })[0];
-
   currentItem = new Item(currentBase);
   currentItem.updateModPool();
   update();
 }
 
 function update() {
-  var output = currentItem.name + "<br>" + currentItem.mods.length + "<br>";
-  for (var i = 0; i < currentItem.mods.length; i++) {
-    output += currentItem.mods[i].id + "<br>";
-  }
-  
-  $("#item").html(output);
+  var output = currentItem.getModsStrings();
+  $("#stat1").text(output[0]);
+  $("#stat2").text(output[1]);
+  $("#stat3").text(output[2]);
+  $("#stat4").text(output[3]);
+  $("#stat5").text(output[4]);
+  $("#stat6").text(output[5]);
 }
 
 function add() {
